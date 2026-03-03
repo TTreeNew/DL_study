@@ -1,8 +1,9 @@
+#输入1维，两层全连接层（2,1）的神经网络
 import dataset
 import numpy as np
 import matplotlib.pyplot as plt
 
-xs,ys = dataset.get_beans("dataset_4.pt")
+xs,ys = dataset.get_beans("dataset_6.pt")
 
 #配置图像
 plt.title("size-Toxicity Function",fontsize=12)#设置图像名称

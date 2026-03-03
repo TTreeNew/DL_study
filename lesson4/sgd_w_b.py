@@ -1,9 +1,10 @@
+#有偏置项无激活函数的1x1神经网络
 import dataset
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-xs,ys = dataset.get_beans("dataset_2.pt")
+xs,ys = dataset.get_beans("dataset_4.pt")
 
 #配置图像
 plt.title("size-Toxicity Function",fontsize=12)#设置图像名称
@@ -18,7 +19,7 @@ y_pre = w*xs + b
 plt.plot(xs,y_pre)
 plt.show()
 
-for _ in range(500): #写两层是为了模仿随机梯度下降的原理，如果写一层并且dw = -2 * np.mean(xs * errors) 就是批量梯度下降
+for _ in range(500): #现在是随机梯度下降，每个样本都会更新参数。如果写一层并且dw = -2 * np.mean(xs * errors) 就是批量梯度下降
     for i in range(100):
         x = xs[i]
         y = ys[i]

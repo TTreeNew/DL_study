@@ -1,8 +1,9 @@
+#有激活函数和偏置项的1x1神经网络
 import dataset
 import numpy as np
 import matplotlib.pyplot as plt
 
-xs,ys = dataset.get_beans("dataset_3.pt")
+xs,ys = dataset.get_beans("dataset_5.pt")
 
 #配置图像
 plt.title("size-Toxicity Function",fontsize=12)#设置图像名称

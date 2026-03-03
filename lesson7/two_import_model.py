@@ -1,8 +1,9 @@
+#2输入，的2x1神经网络
 import dataset
 import numpy as np
 import matplotlib.pyplot as plt
 
-xs,ys,zs = dataset.get_beans("dataset_5.pt")
+xs,ys,zs = dataset.get_beans("dataset_7.pt")
 x_axis = np.linspace(0, 1, 30)  
 y_axis = np.linspace(0, 1, 30)
 x_axis, y_axis = np.meshgrid(x_axis, y_axis)  # 生成网格

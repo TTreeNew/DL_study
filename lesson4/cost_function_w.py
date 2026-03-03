@@ -1,9 +1,10 @@
+#可视化显示代价函数
 import dataset
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-xs,ys = dataset.get_beans("dataset_2.pt")
+xs,ys = dataset.get_beans("dataset_4.pt")
 
 #配置图像
 plt.title("size-Toxicity Function",fontsize=12)#设置图像名称

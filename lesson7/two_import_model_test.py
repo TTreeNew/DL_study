@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 # # 启用交互模式 
 # plt.ion() 
 
-xs,ys,zs = dataset.get_beans("dataset_5.pt")
-x_axis = np.linspace(0, 1, 30)  
+xs,ys,zs = dataset.get_beans("dataset_7.pt")
+x_axis = np.linspace(0, 1, 30)
 y_axis = np.linspace(0, 1, 30)
 x_axis, y_axis = np.meshgrid(x_axis, y_axis)  # 生成网格
 #配置图像

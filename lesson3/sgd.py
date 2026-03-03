@@ -1,8 +1,9 @@
+#无激活函数无偏置项的1x1神经网络
 import dataset
 import numpy as np
 import matplotlib.pyplot as plt
 
-xs,ys = dataset.get_beans("dataset_1.pt")
+xs,ys = dataset.get_beans("dataset_3.pt")
 
 #配置图像
 plt.title("size-Toxicity Function",fontsize=12)#设置图像名称
@@ -18,10 +19,9 @@ for _ in range(100):
     for i in range(100):
         x= xs[i]
         y = ys[i]
-        #a=X^2
-        #b=-2*x*y
-        #c=y^2
-        #斜率k=2aw+b
+        #y=wx
+        #方差(y-wx)^2
+        #方差关于权重w的梯度k=2(y-wx)(-x)
         k= 2*(x**2)*w +(-2*x*y)
         alpha = 0.1
         w= w - alpha*k
